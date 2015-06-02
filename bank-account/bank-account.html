@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Bank Account</h1>
+      <div class="row" id="accountBalance">
+        <div class="col-sm-6">
+          <h2>Current Balance</h2>
+          <h3 id="accountBalance"></h3>
+        </div>
+      </div>
+      <hr>
+      <div class="row" id="actions">
+
+        <div class="col-sm-4" id="new-account">
+          <h2>Create a New Account</h2>
+          <form id="new-account" class="form-style-5">
+            <div class="form-group">
+              <label for="new-account-owner">Account Owner Full Name</label>
+              <input type="text" class="form-control" id="new-account-owner">
+            </div>
+            <div class="form-group">
+              <label for="new-account-type">Account Type</label>
+              <input type="text" class="form-control" id="new-account-type">
+            </div>
+            <div class="form-group">
+              <label for="new-starting-balance">Initial Balance</label>
+              <input type="number" class="form-control" id="new-starting-balance">
+            </div>
+            <button type="submit" id="deposit" class="btn btn-success">+ Add</button>
+          </form>
+        </div>
+
+        <div class="col-sm-4" id="deposit">
+          <h2>Deposit</h2>
+          <form id="new-deposit">
+            <div class="form-group">
+              <label for="new-deposit">Deposit Amount</label>
+              <input type="number" class="form-control" id="new-deposit" min="0">
+            </div>
+            <button type="submit" id="deposit" class="btn btn-success">+ Add</button>
+          </form>
+          </div>
+        </div>
+
+        <div class="col-sm-4" id="withdrawal">
+          <h2>Withdrawal</h2>
+          <div id="withdraw">
+            <form id="new-withdrawal">
+            <div class="form-group">
+              <label for="new-withdrawal">Withdrawal Amount</label>
+              <input type="number" class="form-control" id="new-withdrawal">
+            </div>
+            <button type="submit" id="withdraw" class="btn btn-success">- Withdraw</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
